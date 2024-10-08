@@ -49,10 +49,8 @@ menuItems.forEach(function(item) {
 
         // Faz o scroll suave até a secção se ela existir
         if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
+            targetSection.scrollIntoView({ behavior: 'smooth' });
         }
+        
     });
 });
