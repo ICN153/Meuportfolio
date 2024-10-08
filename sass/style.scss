@@ -174,27 +174,27 @@ img {
     .container {
       background-image: url(../img/retangulo\ 1.png);
       background-repeat: no-repeat;
-      background-size: contain; /* Mantém a proporção da imagem */
-      background-position: center;
+      background-size: cover; // A imagem cobre todo o contêiner
+      background-position: center; 
       max-width: 1025px;
-      height: 764px;
+      height: auto; 
+      border-radius: 500px; 
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 34px;
       overflow: hidden;
-    
-  
-      .home-hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0 auto;
-        max-width: 90%; /* Limita a largura máxima da home-hero */
-        padding: 20px;
-  
+      padding: 20px;
+
+      .home-hero {display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 100%; // Limita a largura máxima da home-hero
+      padding: 20px;
+
         img{
             width: 202px;
             border-radius: 50%;
@@ -850,6 +850,8 @@ img {
         padding: 20px 12px;
       }
     }
+
+
   
     .btn-menu {
       .bar {
@@ -886,3 +888,32 @@ img {
     }
   }
   
+  .hero-section{
+    .home-hero{
+      
+      .container {
+        height: auto; // Permite que a altura se ajuste automaticamente
+        
+        .home-hero {
+          padding: 10px; // Reduz o padding
+          
+          h1 {
+            font-size: 32px; // Tamanho do texto reduzido
+          }
+  
+          h2 {
+            font-size: 20px; // Tamanho do texto reduzido
+          }
+  
+          p {
+            font-size: 16px; // Tamanho do texto reduzido
+          }
+  
+          button {
+            width: 100%; // Botão ocupa toda a largura
+            padding: 12px; // Ajusta o padding
+          }
+        }
+      }
+    }
+  }
