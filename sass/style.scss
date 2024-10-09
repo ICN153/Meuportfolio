@@ -104,12 +104,17 @@ img {
 }
 
  .header {
-  position: sticky;
+  
+  position: sticky; /*Posição fixa somente após a rolagem*/
   top: 0;
-  z-index: 2000;
+  z-index: 100; /*Quando maior o valor, mas a frente o elemento */
+  box-shadow: 5px 5px 5px #0d2055;
+
+  max-width: 100%;
   background-color: #2B2B2B;
-  padding: 18px 0;
-     h1 {
+  padding: 20px 0;
+     
+  h1 {
         font-family: "Oleo Script", system-ui;
         font-size: 32px;
         font-weight: 400;
@@ -435,7 +440,7 @@ img {
             font-size: 14px;
             line-height: 150%;
             color: var(rgb(0, 0, 0));
-            width: 314px;
+            // width: 314px;
             color: var(--white);
           }
 
@@ -484,12 +489,14 @@ img {
           color: var(rgb(0, 0, 0));
           width: 251px;
           color: var(--white);
+          // width: 314px;
+      }
         }
 
         
         }
       }
-  }
+  
 
   .myprojects{
     
@@ -529,7 +536,9 @@ img {
       display: flex;
       justify-content: center;
       column-gap: 55px;
-
+      
+      // flex-wrap: wrap; 
+      //  gap: 15px;
     
 
       h4{
@@ -692,12 +701,19 @@ img {
     }
 
     .form-content {
-      margin-top: 80px;
+      display: flex;
+    column-gap: 80px;
+     
+    
       
       form {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;  
+        flex-direction: column; // Mantém os elementos em coluna
+        align-items: flex-start; // Alinha os itens à esquerda
+        width: 100%; // Garante que o formulário ocupe 100% da largura do container pai
+        max-width: 740px; // Largura máxima para telas maiores
+        margin: 0 auto; // Centraliza o formulário horizontalmente
+    
         
 
         label {
@@ -710,7 +726,7 @@ img {
           display: block;
         }
   
-        input {
+        input,  textarea {
           width: 696px;
           padding: 20px;
           margin-top: 8px;  // Espaçamento entre o label e o input
@@ -723,28 +739,20 @@ img {
         }
 
         textarea{
-          width: 696px;
+
           height: 125px;
-          padding: 20px;
-          margin-top: 8px;  // Espaçamento entre o label e o input
-          font-size: 16px;
-          border: 1px solid var(--gray); // Ajuste o estilo da borda como preferir
-          border-radius: 4px;
-          background-color: transparent;
-          border: 1px solid #D6DDED;
-          color: #8987A1;
-        }
+        } 
 
         button{
           margin-top: 16px;
-          width: 740px;
-          height: 62px;
-          cursor: pointer;
-          font-weight: bold;
-          font-size: 16px;
-          line-height: 150%;
-          font-family: "Raleway", sans-serif;
-          color: #0f0f0f;
+      width: 100%; // Botão ocupa toda a largura disponível
+      height: 62px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      font-family: "Raleway", sans-serif;
+      color: #0f0f0f;
         }
       }
     }
@@ -759,12 +767,17 @@ img {
       margin-top: 220px;
     }
   
-    .footer-title h1 {
+    .footer-title{
+
+      h1{
+        
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-size: 40px; 
       color: rgb(252, 252, 252);
       margin: 0; 
+      }
+
     }
   
     .title-footer {
@@ -801,6 +814,8 @@ img {
 
     .footer-rodape{
       
+      margin-bottom: 45px;
+
       span{
         font-family: 'Inter', sans-serif;
         font-weight: 400;
@@ -819,6 +834,8 @@ img {
   
   @media (max-width: 1279px) {
     .header {
+
+
       .menu-header {
         transform: translateX(-100%);
         height: calc(100vh - 100px);
@@ -917,3 +934,52 @@ img {
       }
     }
   }
+
+  @media(max-width: 1132px){
+    .flex-cards{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+       row-gap: 34px;
+
+    }
+
+    .what-do-2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+       row-gap: 34px;
+
+      .card-1{
+        width: 289px;
+        // height: 501px;
+        margin-top: 14px;   
+      }
+    }
+
+    .name-p{
+      display: flex;
+    flex-wrap: wrap; 
+    // gap: 15px;
+    }
+
+    .footer-rodape{
+  
+      .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      span{
+        
+      }
+
+      .redes{
+        margin-top: 32px;
+      }
+    }
+  }
+}

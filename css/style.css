@@ -96,11 +96,13 @@ img {
 }
 
 .header {
-  position: sticky;
+  position: sticky; /*Posição fixa somente após a rolagem*/
   top: 0;
-  z-index: 2000;
+  z-index: 100; /*Quando maior o valor, mas a frente o elemento */
+  box-shadow: 5px 5px 5px #0d2055;
+  max-width: 100%;
   background-color: #2B2B2B;
-  padding: 18px 0;
+  padding: 20px 0;
 }
 .header h1 {
   font-family: "Oleo Script", system-ui;
@@ -381,7 +383,6 @@ img {
   font-size: 14px;
   line-height: 150%;
   color: var(rgb(0, 0, 0));
-  width: 314px;
   color: var(--white);
 }
 .what-do-2 .card-2 {
@@ -585,12 +586,17 @@ img {
   margin: 0;
 }
 .get-in-hero .form-content {
-  margin-top: 80px;
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
 }
 .get-in-hero .form-content form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
 }
 .get-in-hero .form-content form label {
   font-family: "Poppins", sans-serif;
@@ -601,7 +607,7 @@ img {
   margin-top: 16px;
   display: block;
 }
-.get-in-hero .form-content form input {
+.get-in-hero .form-content form input, .get-in-hero .form-content form textarea {
   width: 696px;
   padding: 20px;
   margin-top: 8px;
@@ -613,20 +619,11 @@ img {
   color: #8987A1;
 }
 .get-in-hero .form-content form textarea {
-  width: 696px;
   height: 125px;
-  padding: 20px;
-  margin-top: 8px;
-  font-size: 16px;
-  border: 1px solid var(--gray);
-  border-radius: 4px;
-  background-color: transparent;
-  border: 1px solid #D6DDED;
-  color: #8987A1;
 }
 .get-in-hero .form-content form button {
   margin-top: 16px;
-  width: 740px;
+  width: 100%;
   height: 62px;
   cursor: pointer;
   font-weight: bold;
@@ -677,6 +674,9 @@ img {
 .footer .border-footer {
   border-bottom: 1px solid var(--link);
   margin-top: 40px;
+}
+.footer .footer-rodape {
+  margin-bottom: 45px;
 }
 .footer .footer-rodape span {
   font-family: "Inter", sans-serif;
@@ -766,4 +766,38 @@ img {
 .hero-section .home-hero .container .home-hero button {
   width: 100%;
   padding: 12px;
+}
+
+@media (max-width: 1132px) {
+  .flex-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 34px;
+  }
+  .what-do-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 34px;
+  }
+  .what-do-2 .card-1 {
+    width: 289px;
+    margin-top: 14px;
+  }
+  .name-p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-rodape .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-rodape .container .redes {
+    margin-top: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
