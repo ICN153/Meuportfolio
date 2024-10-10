@@ -96,13 +96,13 @@ img {
 }
 
 .header {
-  position: sticky; /*Posição fixa somente após a rolagem*/
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: sticky;
   top: 0;
-  z-index: 100; /*Quando maior o valor, mas a frente o elemento */
+  z-index: 2000;
   box-shadow: 5px 5px 5px #0d2055;
-  max-width: 100%;
-  background-color: #2B2B2B;
-  padding: 20px 0;
+  background-color: #2B2B2B; /* Mantenha a cor de fundo */
 }
 .header h1 {
   font-family: "Oleo Script", system-ui;
@@ -635,17 +635,16 @@ img {
 
 .footer .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1140px;
   margin-top: 220px;
 }
 .footer .footer-title h1 {
+  justify-content: space-between;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 40px;
-  color: rgb(252, 252, 252);
   margin: 0;
+  color: white;
 }
 .footer .title-footer {
   display: flex;
@@ -693,21 +692,29 @@ img {
 }
 
 @media (max-width: 1279px) {
+  .header .header {
+    position: fixed; /* Certifique-se de manter o header fixo */
+    top: 0;
+    z-index: 1000; /* Garanta que tenha um z-index alto */
+    width: 100%; /* Ocupa a largura completa */
+    background-color: #2b2b2b; /* Cor de fundo para ficar visível */
+  }
   .header .menu-header {
     transform: translateX(-100%);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px); /* Altura total da tela menos o header */
     background-color: #2b2b2b;
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-    position: absolute;
+    position: fixed; /* Mantenha o menu fixo */
     right: 0;
     top: 80px;
-    width: 100%;
+    width: 100%; /* Ocupa toda a largura */
     flex-direction: column;
-    transition: 0.5s;
+    transition: transform 0.5s ease-in-out; /* Suave ao abrir/fechar */
+    z-index: 999; /* Certifique-se de que está acima do conteúdo */
   }
   .header .menu-open {
-    transform: translateX(0);
+    transform: translateX(0); /* Menu aberto ao clicar */
   }
   .header .menu-header a {
     width: 100%;
@@ -722,7 +729,28 @@ img {
     padding: 20px 12px;
   }
   .btn-menu .bar {
-    width: 40px;
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 12px;
+  }
+  .btn-menu .bar-1 {
+    width: 15px;
+    border-radius: 12px;
+    height: 3px;
+    background-color: var(--white);
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-menu .bar-3 {
+    border-radius: 12px;
+    width: 14px;
+    display: flex;
+    margin-left: 15px;
     height: 3px;
     background-color: var(--white);
     margin-bottom: 3px;
@@ -741,9 +769,7 @@ img {
     opacity: 0;
     transform: translateX(-200px);
   }
-  .header-contato {
-    display: none;
-  }
+  .header-contato,
   .group {
     display: none;
   }
@@ -799,5 +825,19 @@ img {
   }
   .footer-rodape .container .redes {
     margin-top: 32px;
+  }
+}
+@media (max-width: 598px) {
+  .footer-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .footer-title h1 {
+    font-size: 25px !important;
+  }
+  .title-footer {
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
