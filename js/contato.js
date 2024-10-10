@@ -34,23 +34,23 @@ btnMenu.addEventListener('click', function(){
     btnMenu.classList.toggle('x');
 });
 
-// // Fecha o menu e faz scroll suave ao clicar num item
-// menuItems.forEach(function(item) {
-//     item.addEventListener('click', function(e) {
-//         e.preventDefault(); // Evita comportamento padrão dos links
+// Fecha o menu e faz scroll suave ao clicar num item
+menuItems.forEach(function(item) {
+    item.addEventListener('click', function(e) {
+        e.preventDefault(); // Evita comportamento padrão dos links
 
-//         // Fecha o menu e remove a classe 'x' do botão
-//         menuHeader.classList.remove('menu-open');
-//         btnMenu.classList.remove('x');
+        // Fecha o menu e remove a classe 'x' do botão
+        menuHeader.classList.remove('menu-open');
+        btnMenu.classList.remove('x');
 
-//         // Scroll suave até à secção correspondente
-//         var targetId = this.getAttribute('href'); // Pega o ID da secção
-//         var targetSection = document.querySelector(targetId);
+        // Scroll suave até à secção correspondente
+        var targetId = this.getAttribute('href'); // Pega o ID da secção
+        var targetSection = document.querySelector(targetId);
 
-//         // Faz o scroll suave até a secção se ela existir
-//         if (targetSection) {
-//             targetSection.scrollIntoView({ behavior: 'smooth' });
-//         }
+        // Faz o scroll suave até a secção se ela existir
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
         
-//     });
-// });
+    });
+});
