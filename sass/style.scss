@@ -967,6 +967,9 @@ h1 {
         
       
       }
+      .perfil{
+        margin-bottom:30px ;
+      }
     }
   }  
     @media (max-width: 1132px) {
@@ -1064,6 +1067,12 @@ h1 {
     button {
       width: 100%; // Botão ocupa toda a largura
       padding: 12px; // Ajusta o padding
+    }
+  }
+
+  .projects-hero{
+    h1{
+      font-size: 35px !important; 
     }
   }
 }

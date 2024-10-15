@@ -804,6 +804,9 @@ img {
 .hero-section .home-hero .container {
   height: auto;
 }
+.hero-section .home-hero .perfil {
+  margin-bottom: 30px;
+}
 
 @media (max-width: 1132px) {
   .flex-cards {
@@ -879,5 +882,8 @@ img {
   .home-hero button {
     width: 100%;
     padding: 12px;
+  }
+  .projects-hero h1 {
+    font-size: 35px !important;
   }
 }/*# sourceMappingURL=style.css.map */
