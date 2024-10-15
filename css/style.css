@@ -161,6 +161,7 @@ img {
 .header .group {
   width: 30px;
   height: 30px;
+  margin-left: 20px;
 }
 
 .hero-section .container {
@@ -743,13 +744,16 @@ img {
     width: 100%;
     padding: 20px 12px;
     box-sizing: border-box;
-    border-bottom: 1px solid var(--brand-light);
+    border-bottom: 1px solid #2980b9;
   }
   .header .menu-header .btn {
     background-color: var(--brand-dark);
     width: 100%;
     border-radius: 0;
     padding: 20px 12px;
+  }
+  .animated-button {
+    display: none;
   }
   .btn-menu .bar {
     width: 30px;
@@ -799,22 +803,6 @@ img {
 }
 .hero-section .home-hero .container {
   height: auto;
-}
-.hero-section .home-hero .container .home-hero {
-  padding: 10px;
-}
-.hero-section .home-hero .container .home-hero h1 {
-  font-size: 32px;
-}
-.hero-section .home-hero .container .home-hero h2 {
-  font-size: 20px;
-}
-.hero-section .home-hero .container .home-hero p {
-  font-size: 16px;
-}
-.hero-section .home-hero .container .home-hero button {
-  width: 100%;
-  padding: 12px;
 }
 
 @media (max-width: 1132px) {
@@ -873,5 +861,23 @@ img {
   }
   .footer .container .title-footer {
     margin-top: 40px;
+  }
+}
+@media (max-width: 410px) {
+  .home-hero {
+    padding: 10px;
+  }
+  .home-hero h1 {
+    font-size: 30px !important;
+  }
+  .home-hero h2 {
+    font-size: 20px;
+  }
+  .home-hero p {
+    font-size: 16px;
+  }
+  .home-hero button {
+    width: 100%;
+    padding: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
