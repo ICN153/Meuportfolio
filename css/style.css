@@ -752,9 +752,6 @@ img {
     border-radius: 0;
     padding: 20px 12px;
   }
-  .animated-button {
-    display: none;
-  }
   .btn-menu .bar {
     width: 30px;
     height: 3px;
