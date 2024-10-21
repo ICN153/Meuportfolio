@@ -752,14 +752,13 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
     -moz-column-gap: 17px;
          column-gap: 17px;
   }
-  .btn-icone .btn-menu {
+  .btn-menu {
     margin-top: 3px;
   }
-  .btn-icone .btn-menu .bar {
+  .btn-menu .bar {
     width: 30px;
     height: 3px;
     background-color: var(--white);
@@ -768,7 +767,7 @@ img {
     transition: 0.3s;
     border-radius: 12px;
   }
-  .btn-icone .btn-menu .bar-1 {
+  .btn-menu .bar-1 {
     width: 15px;
     border-radius: 12px;
     height: 3px;
@@ -777,7 +776,7 @@ img {
     cursor: pointer;
     transition: 0.3s;
   }
-  .btn-icone .btn-menu .bar-3 {
+  .btn-menu .bar-3 {
     border-radius: 12px;
     width: 14px;
     display: flex;
@@ -788,15 +787,15 @@ img {
     cursor: pointer;
     transition: 0.3s;
   }
-  .btn-icone .btn-menu .x .bar:first-child {
+  .btn-menu .x .bar:first-child {
     transform: rotate(45deg) translate(5px, 5px);
     transition-delay: 0.3s;
   }
-  .btn-icone .btn-menu .x .bar:last-child {
+  .btn-menu .x .bar:last-child {
     transform: rotate(-45deg) translate(3px, -3px);
     transition-delay: 0.3s;
   }
-  .btn-icone .btn-menu .x .bar:nth-child(2) {
+  .btn-menu .x .bar:nth-child(2) {
     opacity: 0;
     transform: translateX(-200px);
   }

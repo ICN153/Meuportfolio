@@ -906,10 +906,10 @@ h1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: row-reverse;
+      // flex-direction: row-reverse;
       column-gap: 17px;
       
-    
+    }
     .btn-menu{
         margin-top: 3px;
       .bar {
@@ -959,7 +959,7 @@ h1 {
         transform: translateX(-200px);
       }
     }
-  }
+  
     .header-contato {
       display: none;
     }
