@@ -161,7 +161,7 @@ img {
 .header .group {
   width: 30px;
   height: 30px;
-  margin-left: 20px;
+  cursor: pointer;
 }
 
 .hero-section .container {
@@ -476,10 +476,6 @@ img {
   font-size: 16px;
   line-height: 150%;
   color: #4FC3F7;
-  cursor: pointer;
-}
-.myprojects .tecnologia .name-p h4:hover {
-  background-color: rgb(0, 0, 0);
 }
 .myprojects .tecnologia .name-p #title-1 {
   width: 193px;
@@ -752,7 +748,18 @@ img {
     border-radius: 0;
     padding: 20px 12px;
   }
-  .btn-menu .bar {
+  .btn-icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    -moz-column-gap: 17px;
+         column-gap: 17px;
+  }
+  .btn-icone .btn-menu {
+    margin-top: 3px;
+  }
+  .btn-icone .btn-menu .bar {
     width: 30px;
     height: 3px;
     background-color: var(--white);
@@ -761,7 +768,7 @@ img {
     transition: 0.3s;
     border-radius: 12px;
   }
-  .btn-menu .bar-1 {
+  .btn-icone .btn-menu .bar-1 {
     width: 15px;
     border-radius: 12px;
     height: 3px;
@@ -770,7 +777,7 @@ img {
     cursor: pointer;
     transition: 0.3s;
   }
-  .btn-menu .bar-3 {
+  .btn-icone .btn-menu .bar-3 {
     border-radius: 12px;
     width: 14px;
     display: flex;
@@ -781,20 +788,19 @@ img {
     cursor: pointer;
     transition: 0.3s;
   }
-  .btn-menu .x .bar:first-child {
+  .btn-icone .btn-menu .x .bar:first-child {
     transform: rotate(45deg) translate(5px, 5px);
     transition-delay: 0.3s;
   }
-  .btn-menu .x .bar:last-child {
+  .btn-icone .btn-menu .x .bar:last-child {
     transform: rotate(-45deg) translate(3px, -3px);
     transition-delay: 0.3s;
   }
-  .btn-menu .x .bar:nth-child(2) {
+  .btn-icone .btn-menu .x .bar:nth-child(2) {
     opacity: 0;
     transform: translateX(-200px);
   }
-  .header-contato,
-  .group {
+  .header-contato {
     display: none;
   }
 }

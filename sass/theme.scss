@@ -1,0 +1,260 @@
+// Mudando a cor do site através do click no icone.
+
+/* Tema claro */
+body.light-theme {
+    background-color: var(--black);
+    // color: #000000;
+}
+
+/* Tema escuro */
+body.dark-theme {
+    background-color: #ebe8e6;
+    // color: #ffffff;
+}
+
+body.dark-theme h1{
+    color: #1A1A1A;
+  }
+
+body.dark-theme .menu-header a {
+    color: #1A1A1A;
+}
+
+body.dark-theme .header {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    box-shadow: 2px 2px 2px #8493bb;
+    background-color: #383a3a;
+}
+
+body.dark-theme .header-contato .animated-button{
+   background-color: transparent;
+    border: 1px solid black;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: #000000;
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.9s ease;
+      }
+    
+      &:hover::before {
+        transform: scaleX(1);
+      }
+    }
+    
+    body.dark-theme .animated-button::before{
+      background-color: transparent;
+    }
+
+    body.dark-theme .animated-button:hover{
+      background-color: #1A1A1A;
+    }
+
+    body.dark-theme .container {
+       background-image: none;
+
+      }
+
+      body.dark-theme .hero-section .home-hero{
+        h1, p{
+            color: #1A1A1A;
+        }
+
+        h2{
+            background: linear-gradient(91deg, #4FC3F7 0.46%, #484E53 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+      }
+
+      body.dark-theme .home-hero .animated-button{
+        background-color: transparent;
+        border: 1px solid black;
+      }
+
+      body.dark-theme .home-hero .animated-button a{
+        color: #1A1A1A;
+      }
+
+      body.dark-theme .about-me span {
+        background: linear-gradient(91deg, #4FC3F7 0.46%, #484E53 100%);
+        background-clip: text;
+        -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+        -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
+    }
+    
+
+
+      body.dark-theme .p-about p{
+        color: #1A1A1A;
+      }
+        
+      body.dark-theme .about-me .animated-button{
+        background-color: transparent;
+        border: 1px solid black;
+        
+      }
+
+      body.dark-theme .about-me .animated-button a{
+        color: #1A1A1A;
+        
+      }
+
+      body.dark-theme .content-service span{
+        
+        background: linear-gradient(91deg, #4FC3F7 0.46%, #484E53 100%);
+        background-clip: text;
+        -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+        -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
+
+      }
+
+      body.dark-theme .card {
+        background: linear-gradient(#ffffff, #ffffff); /* Fundo padrão do card */
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Suaviza a transição */
+      
+        &:hover {
+          transform: translateY(-10px); /* Move o card levemente para cima */
+          box-shadow: 0 10px 15px rgba(123, 140, 173, 0.5); /* Adiciona uma sombra mais suave */
+          background: linear-gradient(91deg, #FAF0E6 0.46%, #eed2b7 100%); /* Gradiente no hover */
+        }
+      }
+      
+
+      body.dark-theme .card .card-content h3{
+        color: #1A1A1A;
+      }
+
+      body.dark-theme .card .card-content p{
+        color: #1A1A1A;
+      }
+
+      body.dark-theme .card-1{  
+        background: linear-gradient(#ffffff, #ffffff); /* Fundo padrão do card */
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Suaviza a transição */
+      
+        &:hover {
+          transform: translateY(-10px); /* Move o card levemente para cima */
+          box-shadow: 0 10px 15px rgba(123, 140, 173, 0.5); /* Adiciona uma sombra mais suave */
+          background: linear-gradient(91deg, #FAF0E6 0.46%, #eed2b7 100%); /* Gradiente no hover */
+        }
+    }
+
+    body.dark-theme .card-conteudo-1 h3{
+      color: #1A1A1A !important;
+    }
+ 
+    body.dark-theme .card-conteudo-1 p{
+      color: #1A1A1A !important;
+    }
+
+
+    body.dark-theme .card-conteudo-2 h3{
+      color: #1A1A1A !important;
+    }
+ 
+    body.dark-theme .card-conteudo-2 p{
+      color: #1A1A1A !important;
+    }
+
+
+    body.dark-theme .card-2{  
+      background: linear-gradient(#ffffff, #ffffff); /* Fundo padrão do card */
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Suaviza a transição */
+    
+      &:hover {
+        transform: translateY(-10px); /* Move o card levemente para cima */
+        box-shadow: 0 10px 15px rgba(123, 140, 173, 0.5); /* Adiciona uma sombra mais suave */
+        background: linear-gradient(91deg, #FAF0E6 0.46%, #eed2b7 100%); /* Gradiente no hover */
+      }
+    }
+
+body.dark-theme .projects-hero p{
+  
+  background: linear-gradient(91deg, #4FC3F7 0.46%, #484E53 100%);
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+  -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
+}
+
+body.dark-theme .projects-hero h1{
+  color: #1A1A1A;
+}
+
+body.dark-theme .tecnologia .name-p h4{
+  border: 1px solid #1A1A1A;
+  color: #1A1A1A;
+}
+
+body.dark-theme .img-card h2{
+color: #1A1A1A;
+}
+
+body.dark-theme .img-card p{
+  color: #1A1A1A;
+  }
+
+body.dark-theme .projero-hero-1 .animated-button-view{
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+
+
+body.dark-theme .projero-hero-1 .animated-button-view a{
+  color: #1A1A1A;
+}
+
+body.dark-theme .projects-hero input{
+  background-color: transparent;
+  border: 1px solid #1A1A1A;
+  color: #1A1A1A;
+}
+
+body.dark-theme .projects-hero button{
+  background-color: transparent;
+  border: 1px solid #1A1A1A;
+  border-radius: 5px;
+  color: #1A1A1A;
+}
+
+body.dark-theme .projects-hero button:hover{
+  background-color: white;
+}
+body.dark-theme .projects-hero textarea{
+  background-color: transparent;
+  border: 1px solid #1A1A1A;
+  color: #1A1A1A;
+}
+
+body.dark-theme .footer-title h1{
+  color: #1A1A1A;
+}
+
+body.dark-theme .title-footer p{
+
+  color: #1A1A1A;
+}
+
+
+body.dark-theme .title-footer .gmail{
+  border: 1px solid #1A1A1A;
+}
+
+body.dark-theme .footer-rodape span{
+  color: #1A1A1A;
+}
+
+.hidden {
+  display: none; /* Esconde o ícone não usado */
+}
+

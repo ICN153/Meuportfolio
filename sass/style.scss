@@ -157,8 +157,7 @@ h1 {
 }
 
 .header-contato {
-  // display: flex; // Para garantir que o botão se alinhe corretamente
-  // align-items: center; // Centraliza verticalmente o botão
+  
     button {
         border: 1px solid #4FC3F7;
         background-color: var(--black);
@@ -183,7 +182,9 @@ h1 {
 .group {
   width: 30px; // Ajuste conforme necessário
   height: 30px; // Ajuste conforme necessário
-  margin-left: 20px; // Adicione margem, se necessário, para espaçamento
+  // margin-left: 20px; // Adicione margem, se necessário, para espaçamento
+  cursor: pointer;
+  
 }
 }
 
@@ -564,12 +565,12 @@ h1 {
         font-size: 16px;
         line-height: 150%;
         color: #4FC3F7;
-        cursor: pointer;
+        // cursor: pointer;
       }
 
-      h4:hover{
-        background-color: rgb(0, 0, 0);
-      }
+      // h4:hover{
+      //   background-color: rgb(0, 0, 0);
+      // }
 
       #title-1{
         width: 193px;
@@ -856,13 +857,14 @@ h1 {
         z-index: 1000; /* Garanta que tenha um z-index alto */
         width: 100%; /* Ocupa a largura completa */
         background-color: #2b2b2b; /* Cor de fundo para ficar visível */
+        
+
+        
       }
       
       .menu-header {
 
         
-      
-
         transform: translateX(100%);
         height: calc(100vh - 100px); /* Altura total da tela menos o header */
         background-color: #2b2b2b;
@@ -891,6 +893,7 @@ h1 {
         width: 100%;
         border-radius: 0;
         padding: 20px 12px;
+     
       }
     }
 
@@ -899,8 +902,16 @@ h1 {
     //   display: none;
     // } 
 
-    .btn-menu {
+    .btn-icone{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      column-gap: 17px;
       
+    
+    .btn-menu{
+        margin-top: 3px;
       .bar {
         width: 30px;
         height: 3px;
@@ -909,6 +920,7 @@ h1 {
         cursor: pointer;
         transition: 0.3s;
         border-radius: 12px;
+        
       }
   
       .bar-1{
@@ -947,17 +959,13 @@ h1 {
         transform: translateX(-200px);
       }
     }
-  
-    .header-contato,
-    .group {
+  }
+    .header-contato {
       display: none;
     }
   }
   
-  // .animated-button{
-  //   display: none;
-  // }
-
+  
   
   .hero-section{
     .home-hero{
