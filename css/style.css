@@ -755,7 +755,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: reverse;
+    flex-direction: row-reverse;
     -moz-column-gap: 17px;
          column-gap: 17px;
   }

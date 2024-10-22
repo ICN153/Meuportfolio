@@ -118,11 +118,11 @@ body.dark-theme .card:hover {
 }
 
 body.dark-theme .card .card-content h3 {
-  color: #1A1A1A;
+  color: #000000;
 }
 
 body.dark-theme .card .card-content p {
-  color: #1A1A1A;
+  color: #080808;
 }
 
 body.dark-theme .card-1 {
@@ -136,19 +136,19 @@ body.dark-theme .card-1:hover {
 }
 
 body.dark-theme .card-conteudo-1 h3 {
-  color: #1A1A1A !important;
+  color: #000000 !important;
 }
 
 body.dark-theme .card-conteudo-1 p {
-  color: #1A1A1A !important;
+  color: #000000 !important;
 }
 
 body.dark-theme .card-conteudo-2 h3 {
-  color: #1A1A1A !important;
+  color: #000000 !important;
 }
 
 body.dark-theme .card-conteudo-2 p {
-  color: #1A1A1A !important;
+  color: #000000 !important;
 }
 
 body.dark-theme .card-2 {
