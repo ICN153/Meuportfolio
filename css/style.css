@@ -748,10 +748,14 @@ img {
     border-radius: 0;
     padding: 20px 12px;
   }
+  .animated-button {
+    display: none;
+  }
   .btn-icone {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: reverse;
     -moz-column-gap: 17px;
          column-gap: 17px;
   }

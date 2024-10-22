@@ -9,20 +9,24 @@ body.dark-theme {
   background-color: #ebe8e6;
 }
 
+body.dark-theme .header h1 {
+  color: #4FC3F7;
+}
+
 body.dark-theme h1 {
   color: #1A1A1A;
 }
 
 body.dark-theme .menu-header a {
-  color: #1A1A1A;
+  color: #ffffff;
 }
 
 body.dark-theme .header {
   position: sticky;
   top: 0;
   z-index: 2000;
-  box-shadow: 2px 2px 2px #8493bb;
-  background-color: #383a3a;
+  box-shadow: 2px 2px 2px #140c80;
+  background-color: #2B2B2B;
 }
 
 body.dark-theme .header-contato .animated-button {

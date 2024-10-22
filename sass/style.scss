@@ -898,20 +898,21 @@ h1 {
     }
 
     
-    // .animated-button {
-    //   display: none;
-    // } 
+    .animated-button {
+      display: none;
+    } 
 
     .btn-icone{
       display: flex;
       justify-content: center;
       align-items: center;
-      // flex-direction: row-reverse;
+      flex-direction: reverse;
       column-gap: 17px;
       
     }
     .btn-menu{
         margin-top: 3px;
+        
       .bar {
         width: 30px;
         height: 3px;
