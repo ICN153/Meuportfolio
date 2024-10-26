@@ -221,11 +221,11 @@ body.dark-theme .footer-title h1 {
   color: #1A1A1A;
 }
 
-body.dark-theme .title-footer p {
+body.dark-theme .title-footer .email {
   color: #1A1A1A;
 }
 
-body.dark-theme .title-footer .gmail {
+body.dark-theme .title-footer .email {
   border: 1px solid #1A1A1A;
 }
 
