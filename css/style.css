@@ -774,9 +774,16 @@ img {
     border-radius: 0;
     padding: 20px 12px;
   }
+}
+@media (max-width: 1279px) and (max-width: 1279px) {
   .animated-button {
-    display: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 0;
   }
+}
+@media (max-width: 1279px) {
   .btn-icone {
     display: flex;
     justify-content: center;

@@ -920,10 +920,14 @@ img {
     }
   }
 
-
+@media (max-width: 1279px) {
   .animated-button {
-    display: none;
+    display: block; // ou inline-block
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 0;
   }
+}
 
   .btn-icone {
     display: flex;
