@@ -49,6 +49,53 @@ img {
   display: block;
 }
 
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+   background: rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.popup-content iframe {
+  border-radius: 12px;
+  background: white;
+}
+
+
+
+#closePopup {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+
+  cursor: pointer;
+  z-index: 10000;
+  transition: all 0.3s ease;
+}
+
+#closePopup:hover {
+  color: #ff4d4d;
+  transform: scale(1.15);
+}
+
 // Animação nos button ao passar o mouse.
 
 .animated-button {
@@ -124,7 +171,7 @@ img {
   box-shadow: 5px 5px 5px #0d2055;
   background-color: #2B2B2B;
   /* Mantenha a cor de fundo */
-
+  cursor: pointer;
 
   h1 {
     font-family: "Oleo Script", system-ui;
@@ -334,6 +381,14 @@ img {
   }
 }
 
+.extra-project {
+  display: none;
+}
+
+.extra-project.show {
+  display: block;
+}
+
 .content-service {
   display: block;
   justify-content: center;
@@ -413,6 +468,58 @@ img {
 
     }
   }
+}
+
+.img-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.03) rotateX(3deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  img {
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  
+}
+
+.img-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.03) rotateX(3deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  img {
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4FC3F7;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  z-index: 9999;
 }
 
 .what-do-2 {
@@ -657,7 +764,7 @@ img {
     position: relative;
     overflow: hidden;
     transition: background-color 0.4s ease;
-    margin-top: 80px;
+    margin-top: 40px;
     border-radius: 50px;
 
     a {
@@ -687,6 +794,7 @@ img {
   }
 
 }
+
 
 .get-in-hero {
 
@@ -1119,3 +1227,36 @@ img {
     }
   }
 }
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 10;
+  border-radius: 50%;
+
+  animation: whatsappFloat 3s ease-in-out infinite;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes whatsappFloat {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+  }
+
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+  }
+
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+  }
+}
+
+
