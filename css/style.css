@@ -61,10 +61,27 @@ img {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  /* ANIMAÇÃO */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+/* Quando abrir */
+.popup.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popup-content {
   position: relative;
+  /* ANIMAÇÃO DO CARD */
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.5s ease;
+}
+
+.popup.show .popup-content {
+  transform: translateY(0) scale(1);
 }
 
 .popup-content iframe {
@@ -74,8 +91,8 @@ img {
 
 #closePopup {
   position: absolute;
-  top: 25px;
-  right: 40px;
+  top: 35px;
+  right: 85px;
   font-size: 35px;
   font-weight: bold;
   color: #ffffff;
@@ -85,7 +102,7 @@ img {
 }
 
 #closePopup:hover {
-  color: #ff4d4d;
+  color: #4dff7a;
   transform: scale(1.15);
 }
 
